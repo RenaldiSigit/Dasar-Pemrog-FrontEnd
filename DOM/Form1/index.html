@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DP-Front-End- Live Update Formulir </title>
+  <link rel="icon" type="image/jpg" href="favicon.png" />
+  <script src="script.js"></script>
+  <style>
+    .m-top {
+      margin-top: 10px;
+    }
+
+    .textbox {
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="Form1" name="Form1"">
+    <section class=" m-top">
+    <label>Nama Lengkap</label><br>
+    <input type="text" name="inputNama" id="nama" placeholder="Masukan Nama Lengkap" oninput="Tampil()" />
+    </section>
+    <br>
+    <section class="m-top">
+      <label>Masukan Email</label>
+      <br>
+      <input type="text" name="inputEmail" id="email" placeholder="Masukan Email" oninput="Tampil()" />
+    </section>
+    <br>
+    <section class="m-top">
+      <label>Jenis Kelamin</label><br>
+      <input type="radio" id="pria" name="gender" value="Pria" oninput="Tampil()"> 
+      <label for="pria">Pria</label><br>
+      <input type="radio" id="wanita" name="gender" value="Wanita" oninput="Tampil()">
+      <label for="wanita">Wanita</label></br>
+    </section>
+    <br>
+    <section class="m-top">
+      <label>Agama:</label>
+      <br>
+      <select name="agama" oninput="Tampil()">
+        <option value="">Pilih</option>
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Buddha">Buddha</option>
+        <option value="Katholik">Katholik</option>
+      </select>
+    </section>
+    <br>
+    <section class="m-top">
+      <label>Alamat :</label><br />
+      <textarea name="Alamat" class="textarea" rows="8" cols="30" placeholder="Masukan Alamat"
+        oninput="Tampil()"></textarea>
+    </section>
+    <br>
+    <section class="m-top">
+      <input type="button" name="kirim" id="tombKirim" value="Kirim" onclick="Tampil()" />
+      <input type="button" value="Reset" onclick="window.location.reload()">
+    </section>
+    <br>
+  </form>
+  <div id="Tampil" class="m-top"></div>
+</body>
+
+</html>
