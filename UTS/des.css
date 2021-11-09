@@ -1,0 +1,218 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: gainsboro;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-] {
+  float: left;
+}
+
+[class*=col-] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px){
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*navbar*/
+
+nav{
+    position: fixed;
+    text-align: left;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 9999;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+h3{
+    padding-left: 100px;
+    padding-right: 650px;
+    font-size: 25px;
+    color: greenyellow;
+}
+
+a{
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: greenyellow;
+}
+
+input{
+    border: none;
+    padding: 10px;
+    width: 250px;
+    border-bottom: 1px solid greenyellow;
+}
+
+button{
+    margin-left: 10px;
+    margin-right: 100px;
+    border: none;
+    color: white;
+    background-color: greenyellow;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(112, 224, 112);
+}
+
+/*opsi*/
+
+section{
+    position: center;
+    color: black;
+    font-weight: 500;
+    padding: 50px 50px;
+}
+
+.box{
+    border-radius: 25px;
+    margin: 75px 50px 0px 50px;
+    padding: 25px 0px 10px 0;
+    background-color: greenyellow;
+}
+
+.produk , .dll {
+  padding: 100px 100px;
+}
+.produk .teks, .dll .teks {
+  font-size: 50px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.produk ul, .dll ul {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  list-style: none;
+}
+.produk ul li, .dll ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+.produk a, .dll a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.produk a:hover, .dll a:hover {
+  color: C4C4C4;
+}
+.produk p, .dll p {
+  font-size: 20px;
+}
+.produk em, .dll em {
+  color: black;
+}
+
+:checked{
+  color: orange;
+}
+
+.produk, .dll {
+  background-color: E2E2E2;
+}
+
+img{
+  border-radius: 10px;
+  height: 250px;
+}
+
+/*footer*/
+
+.buy{
+  text-align: left;
+  border: none;
+  color: white;
+  background-color: grey;
+  padding: 10px 25px 10px 25px;
+}
+
+.buy:hover{
+  color: white;
+  background-color: rgb(112, 224, 112);
+}
+
+.beli{
+  text-align: left;
+  border: none;
+  color: white;
+  background-color: grey;
+  padding: 10px 25px 10px 25px;
+}
+
+.beli:hover{
+  color: white;
+  background-color: rgb(112, 224, 112);
+}
+
+.masukkan{
+  text-align: left;
+  border: none;
+  color: white;
+  background-color: grey;
+  padding: 10px 25px 10px 25px;
+}
+
+.masukkan:hover{
+  color: white;
+  background-color: rgb(112, 224, 112);
+}

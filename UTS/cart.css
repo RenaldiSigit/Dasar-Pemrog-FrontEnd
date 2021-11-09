@@ -1,0 +1,115 @@
+a.comment-indicator:hover+div.comment {
+    background: transparent;
+    position: absolute;
+    display: block;
+    border: none
+}
+
+a.comment-indicator {
+    background: red;
+    display: inline-block;
+    border: none;
+    width: 0.5em;
+    height: 0.5em
+}
+
+div.comment {
+    display: none
+}
+
+table {
+    border-collapse: collapse;
+    page-break-after: always;
+}
+
+.b {
+    text-align: center
+}
+
+.e {
+    text-align: center
+}
+
+.f {
+    text-align: right
+}
+
+.inlineStr {
+    text-align: left
+}
+
+.n {
+    text-align: right
+}
+
+.s {
+    text-align: left
+}
+
+td.style1 {
+    vertical-align: middle;
+    text-align: center;
+    color: #000000;
+    font-family: 'Calibri';
+    font-size: 11pt;
+    background-color: rgba(0, 255, 136, 0.993);
+}
+
+th.style1 {
+    vertical-align: middle;
+    text-align: center;
+    color: #000000;
+    font-family: 'Calibri';
+    font-size: 11pt;
+    background-color: rgba(0, 255, 136, 0.993);
+}
+
+td.style2 {
+    vertical-align: middle;
+    text-align: center;
+    color: #000000;
+    font-family: 'Calibri';
+    font-size: 11pt;
+    background-color: rgba(0, 255, 136, 0.993);
+}
+
+th.style2 {
+    vertical-align: middle;
+    text-align: center;
+    color: #000000;
+    font-family: 'Calibri';
+    font-size: 11pt;
+    background-color: rgba(0, 255, 136, 0.993);
+}
+
+table.sheet0 col.col0 {
+    width: auto
+}
+
+table.sheet0 col.col1 {
+    width: auto
+}
+
+table.sheet0 col.col2 {
+    width: auto
+}
+
+table.sheet0 col.col3 {
+    width: auto
+}
+
+table.sheet0 col.col4 {
+    width: auto
+}
+
+table.sheet0 col.col5 {
+    width: auto
+}
+
+table.sheet0 col.col6 {
+    width: auto
+}
+
+table.sheet0 tr {
+    height: 15pt
+}

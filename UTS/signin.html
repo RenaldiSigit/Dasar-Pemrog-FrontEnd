@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Halaman ini di buat oleh
+    Nama : Renaldi Sigit Pratama
+    NIM  : 1120101848
+    Kelas: SP 3.2 Desain Web Dan Dasar Pemrograman Front-end-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                        <h4>Coffenesia</h4>
+                    </a></li>
+                <li><input class="cari" type="text" name="" placeholder="Cari produk kopi mu di sini"></li>
+                <li><button>CARI</button></li>
+                <li><a href="shopcart.html">Keranjang</a></li>
+                <li><a href="#">Notifikasi</a></li>
+                <li><a href='#'>Pesan</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+            <h1>LOGIN</h1>
+            <form>
+                <label>USERNAME</label><br>
+                <input type="text" id="user-inp"><br>
+                <label>PASSWORD</label><br>
+                <input type="password" id="pass-inp"><br>
+                <button type="submit" id="btn-Login">LOG IN</button>
+                <hr>
+                <label>Belum Punya akun?<a href="signup.html" style="color: black;"><u>Daftar Disini</u></a></label>
+            </form>
+        </div>
+    </section>
+    <script>
+        let btnlog = document.getElementById("btn-Login")
+
+        btnlog.addEventListener("click", function (e) {
+            e.preventDefault()
+            alert("Selamat Anda Sudah Login")
+            window.location.href = "index.html"
+        })
+    </script>
+</body>
+
+</html>

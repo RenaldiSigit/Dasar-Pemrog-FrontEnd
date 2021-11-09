@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Halaman ini di buat oleh
+    Nama : Renaldi Sigit Pratama
+    NIM  : 1120101848
+    Kelas: SP 3.2 Desain Web Dan Dasar Pemrograman Front-end-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Keranjang Belanja</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">
+                    <h4>Coffenesia</h4>
+                </a></li>
+            <li><input class="cari" type="text" name="" placeholder="Cari produk kopi mu di sini"></li>
+            <li><button>CARI</button></li>
+            <li><a href="shopcart.html">Keranjang</a></li>
+            <li><a href="#">Notifikasi</a></li>
+            <li><a href='#'>Pesan</a></li>
+            <li><a href="#">Akun</a></li>
+        </ul>
+    </nav>
+    <section>
+        <br>
+        <h1 style="text-align: left;">Keranjang Belanja</h1>
+        <hr>
+        <table width="100%">
+            <td><input type="checkbox" name="AllKeranjang" id="CheckAll">Pilih Semua</td>
+            <td align="right"><u>Batal belanja</u></td>
+        </table>
+        <hr>
+        <br>
+        <table style="background-color: rgba(0, 255, 136, 0.993)" width="100%">
+            <tr>
+                <td><input type="checkbox" name="NameToko" id="NameToko"><strong>KOPINESIA STORE</strong></td>
+            </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines" width="100%">
+            <colgroup>
+                <col class="col0">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                <col class="col5">
+                <col class="col6">
+            </colgroup>
+            <tbody>
+                <tr class="row1">
+                    <td class="column0 style1 null style1" rowspan="3"><input type="checkbox" id="barang1">
+                    </td>
+                    <td class="column1 style1 null style1" rowspan="3"><img src="/images/kopi.png" alt=""></td>
+                    <td class="column2 style2 s" style="text-align: left;">KOPI Robusta</td>
+                    <td class="column3 style2 null"></td>
+                    <td class="column4 style2 null"></td>
+                    <td class="column5 style2 null"></td>
+                    <td class="column6 style2 s" style="text-align: left;">Total</td>
+                </tr>
+                <tr class="row2">
+                    <td class="column2 style2 s" style="text-align: left;">Tipe</td>
+                    <td class="column3 style2 s">Favorite</td>
+                    <td class="column4 style2 s"><u>Hapus</u></td>
+                    <td class="column5 style2 s"><input type="number" min="0" style="width: 50px; height: auto;">
+                    </td>
+                    <td class="column6 style2 s" style="text-align: left;">RP.100000</td>
+                </tr>
+            </tbody>
+        </table>
+        <table cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines" width="100%">
+            <colgroup>
+                <col class="col0">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                <col class="col5">
+                <col class="col6">
+            </colgroup>
+            <br>
+            <tbody>
+                <tr class="row1">
+                    <td class="column0 style1 null style1" rowspan="3"><input type="checkbox" id="barang2">
+                    </td>
+                    <td class="column1 style1 null style1" rowspan="3"><img src="/images/kopi.png" alt=""></td>
+                    <td class="column2 style2 s" style="text-align: left;">KOPI Robusta</td>
+                    <td class="column3 style2 null"></td>
+                    <td class="column4 style2 null"></td>
+                    <td class="column5 style2 null"></td>
+                    <td class="column6 style2 s" style="text-align: left;">Total</td>
+                </tr>
+                <tr class="row2">
+                    <td class="column2 style2 s" style="text-align: left;">Tipe</td>
+                    <td class="column3 style2 s">Favorite</td>
+                    <td class="column4 style2 s"><u>Hapus</u></td>
+                    <td class="column5 style2 s"><input type="number" min="0" style="width: 50px; height: auto;">
+                    </td>
+                    <td class="column6 style2 s" style="text-align: left;">RP.100000</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <table width="100%">
+            <tr class="row2">
+                <td class="column2 style2 s"><strong>TOTAL</strong></td>
+                <td class="column3 style2 null"></td>
+                <td class="column4 style2 null"></td>
+                <td class="column5 style2 s"><strong>RP.200000</strong></td>
+                <td class="column6 style2 s"><a href="pembayaran.html"><input type="Button" name="bayar" id="bayar"
+                            value="Bayar"></a></td>
+            </tr>
+        </table>
+        <hr>
+        <script>
+            let PilihAll = document.getElementById("CheckAll")
+            let Toko = document.getElementById("NameToko")
+            let brg1 = document.getElementById("barang1")
+            let brg2 = document.getElementById("barang2")
+
+            PilihAll.addEventListener("click", function (e) {
+                if (e.target.checked == true) {
+                    Toko.checked = true
+                    brg1.checked = true
+                    brg2.checked = true
+                }
+                else {
+                    Toko.checked = false
+                    brg1.checked = false
+                    brg2.checked = false
+                }
+            })
+
+        </script>
+</body>
+
+</html>
